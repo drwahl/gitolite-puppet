@@ -1,0 +1,8 @@
+### THIS FILE IS MANAGED BY PUPPET
+### <%= file %>
+<% gl_servers.each do |gitolite_server| -%>
+host <%= gitolite_server %>
+    user <%= user %>
+    hostname <%= gitolite_server %>
+    port <%= port %>
+<% end %>
